@@ -7,8 +7,9 @@
  <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
-Desenvolvimento de uma aplicação web de alocação de carros com Java e JavaScript (Trabalho de Faculdade)
-Tenho que fazer uma aplicação web sobre alocação de carros. Basicamente, vou fazer o back-end em Java, que é a minha parte, mas estou em dúvida em qual API usar para fazer a integração com o front-end que será feito em JavaScript e seus frameworks. Se alguém tiver uma dica, agradeço.
+
+Desenvolvimento de uma aplicação web de alocação de carros com Java e JavaScript
+Tenho que fazer uma aplicação web sobre alocação de carros. Basicamente, vou fazer o back-end em Java, que é a minha parte, mas estou em dúvida em qual API usar para fazer a integração com o front-end que será feito em JavaScript e seus frameworks.
 
 O projeto consiste em:
 
