@@ -22,3 +22,7 @@ Mostrar um gráfico de faturamento com locação por período e por veículo
 Estou cursando a terceira fase do curso de Sistemas de Informação. Se alguém se interessar em ajudar, pode deixar um comentário.
 
 Desde já, agradeço!
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
