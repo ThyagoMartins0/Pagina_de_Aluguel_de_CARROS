@@ -1,6 +1,8 @@
 package com.ecommerce.carro.loja.de.carro.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 
 
 //NOTA IMPORTANTE, AQUI EU PODERIA USAR O LOMBOK PARA FAZER O GETTER E SETTER E VÁRIOS OUTROS
@@ -13,25 +15,30 @@ import jakarta.persistence.*;
         @UniqueConstraint(columnNames = "email")
                             }
         )
-public class User {
+public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id; //Meio de identificação de cada usuario
 
     //Itens basicos para cadastro e movimentação dos dados em sistema
+    @NotNull
     private String Name;
+    @NotNull
     private String Lastname;
 
-    @Column (nullable = false)
+    @NotNull
+    @Email
+    @Column (nullable = false, unique = true)
     private String Email;
 
+    @NotNull
     private String Password;
 
-    public User(){
+    public UserModel(){
 
     }
 
-    public User(String Name, String Lastname, String Email, String Password){
+    public UserModel(String Name, String Lastname, String Email, String Password){
         this.Name = Name;
         this.Lastname = Lastname;
         this.Email = Email;
@@ -74,5 +81,8 @@ public class User {
 
     public void setPassword(String Password) {
         this.Password = Password;
+    }
+
+    public void setId(long l) {
     }
 }
